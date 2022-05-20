@@ -1,0 +1,148 @@
+.custm-nav{
+    position: fixed;
+    left:0; 
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #FFF;
+    
+    nav
+    {
+        
+        box-shadow: 1px 1px 5px #c7c7c7;
+
+        .navbar-toggler
+        {
+            box-shadow: none;
+            .navbar-toggler-icon
+            {
+            
+                font-size: 1.7rem;
+                color: #4232c2;
+                
+            }
+        }
+
+        .navbar-collapse
+        {
+            @media (max-width:991px) 
+            {
+                margin-top: 35px;
+            }
+        }
+        .navbar-brand
+        {
+            color: #212529;
+            font-size: 1.5rem;
+
+            i
+            {
+                font-size: 2.3rem;
+                color: $mainColor ;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10xp;
+             }
+             
+                 
+            span
+            {
+                     color: $mainColor ;
+                     font-weight: bold;
+            }
+             
+
+         }
+
+         .navbar-nav
+         {
+            width: 100%;
+            justify-content: space-evenly;
+            border-left: 1px solid #c1c1c1;
+            border-right: 1px solid #c1c1c1;
+
+            @media (max-width: 991px) 
+            {
+                border-left: none;
+                border-right: none;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid #c1c1c1;
+            }
+         }
+         .nav-item
+         {
+            @media (max-width: 991px) 
+            {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            .nav-link
+            {
+                color: #777;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                transition: all 0.3s ease;
+                border-radius: 20px;
+                width: 80px;
+                text-align: center;
+                @media (max-width: 991px) 
+                {
+                    width: 100%;
+                    padding: 8px;
+                }
+                &.active
+                {
+                    background-color: $mainColor;
+                    border-radius: 20px;
+                    color: white;
+                    
+                }
+                &:hover
+                {
+                    background-color: $mainColor;
+                    border-radius: 20px;
+                    color: white; 
+                }
+            }
+         }
+
+         .buttons
+         {
+             margin-left: 10px;
+             width: 20%;
+             @media (max-width: 991px) 
+             {
+                 width: 100%;
+                 margin-left: 0px;
+                 margin-top: 10px;
+             }
+
+             i{
+                 color: $mainColor;
+                 font-size: 1.3rem;
+                 cursor: pointer;
+                 width: 30px;
+                 height: 30px;
+                 transition: all 0.3s ease;
+                 &:hover
+                 {
+                        background-color:$mainColor ;
+                        color: white;
+                        border-radius: 50%;
+                        padding: 10px;
+                 }
+
+             }
+
+         }
+
+
+
+
+    }
+
+} 
+
+

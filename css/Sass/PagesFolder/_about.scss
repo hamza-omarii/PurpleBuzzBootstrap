@@ -1,0 +1,415 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Start slider-about */
+
+.slider-about{
+margin-top: 66px; // because navbar in fixed posstion
+background-color: $background-about ;
+padding-top: 20px;
+padding-bottom: 20px;
+
+    .box-slider-about
+    {
+        
+        h2{
+            color: $mainColor;
+            font-weight: bold;
+            
+            @media (max-width:991px) {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px;
+            }
+        }
+        p{
+            color: $textColor;
+            margin-top: 20px;
+            line-height: 2;
+            @media (max-width:991px) {
+                line-height: 1.5;
+            }
+        }
+    }       
+
+}
+
+/* End slider-about */
+
+
+/* Start ourteam */
+
+.ourteam{
+
+    padding-top:55px;
+    padding-bottom: 55px;
+    .box-ourteam
+    {
+        @media (max-width:767px) {
+            margin-bottom: 20px;
+        }
+        h2
+        {
+                color: $mainColor;
+                font-weight: bold;
+                
+                @media (max-width:991px) 
+                {
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 10px;
+                }
+        }
+        p{
+            margin-top: 20px;
+            color: $textColor;
+            line-height: 1.5;
+        }
+    }
+
+    .card{
+        border: none;
+        width: 13rem;
+        @media (max-width:767px) {
+            width: 13rem;
+            margin-left:  auto;
+            margin-right: auto;
+        }
+
+        img{
+            margin: 0 auto;
+        }
+        .card-body{
+            span{
+                &:first-of-type{
+                    font-size: 1.2rem;
+                    letter-spacing: 1px;
+                    margin-bottom: 5px;
+                }
+                &:last-of-type{
+                    font-size: 0.8rem;
+                    letter-spacing: 1px;
+                    @media (max-width:767px) {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+            color: $textColor;
+
+        }
+    }
+
+
+}
+/* End ourteam */
+
+
+/* Start partner */
+.partner
+{
+    padding-top:50px;
+    padding-bottom: 50px;
+    background-color: $secondColor;
+    
+    @media (max-width:500px) 
+    {
+        padding-top:30px;
+        padding-bottom: 30px;
+    }
+
+    h2{
+        text-align: center;
+        color: #FFF;
+        margin-bottom: $margBottom;
+        font-weight: bold;
+
+        @media (max-width:500px) 
+        {
+            margin-bottom: 20px;
+        }
+    }
+
+    .icons-patner{
+        i{
+            width: 250px;
+            height: 150px;
+            @media (max-width:1199px) 
+            {
+                width: 200px;
+                height: 120px;
+            }
+            @media (max-width:991px) 
+            {
+                width: 170px;
+                height: 100px;
+            }
+            @media (max-width:767px) 
+            {
+                width: 120px;
+                height: 80px;
+            }
+            @media (max-width:500px) 
+            {
+                width: 70px;
+                height: 45px;
+                font-size: 1.5rem;
+            }
+
+            background-color: #7276ec;
+            color: #FFF;
+            font-size: 4rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(230, 230, 230);
+                color:  #7276ec;
+                
+            }
+        }
+    }
+
+}
+
+
+/* End partner */
+
+
+
+/* Start creative */
+
+.creative
+{
+padding-top: 50px;
+padding-bottom: 50px;
+    .box-creative{
+        @media (max-width:991px) {
+            margin-bottom: 15px;
+        }
+    }
+    h2
+    {
+        color: $mainColor ;
+        margin-bottom: 15px;
+        font-weight: bold;
+        @media (max-width:991px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }   
+    p{
+        color: $textColor;
+        line-height:1.8;
+    }
+
+    .prog{
+        margin-bottom: 10px;
+
+        .info{
+            margin-bottom: 5px;
+            span{
+                color: $textColor;
+            }
+        }
+
+        .progress-bar{
+            background-color: $mainColor;
+        }
+    }
+
+
+}
+
+
+/* End creative */
+
+
+/* Start choose us*/
+
+.choose-us{
+
+    background-color: $background-about ;
+    margin-bottom: $margBottom;
+    margin-top: 250px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    @media (max-width: 1199px) {
+        margin-top: 100px;
+    }
+    @media (max-width: 991px) {
+        margin-top: 0px;
+    }
+
+
+    .container{
+        position: relative;
+    }
+
+    h2{
+        color: $mainColor;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    p{
+        color: $textColor;
+        font-size: 0.8rem;
+        line-height: 2;
+    }
+
+    img{
+        position: absolute;
+        width: 45%;
+        right: 0;
+        bottom: 0;
+
+        @media (max-width: 991px) {
+            position: static;
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+/*         @media (max-width: 991px) {
+            position: absolute;
+            width: 45%;
+            top: -140%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        } */
+/*         @media (max-width: 767px) {
+            position: absolute;
+            width: 45%;
+            top: -100%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        } */
+    }
+
+}
+
+
+/* End choose us*/
+
+
+/* Start Goal */
+
+.goal{
+margin-bottom: $margBottom;
+    .card
+    {
+        width: 80%;
+        margin: 0 auto;
+        border: none;
+        @media (max-width:991px) 
+        {
+            margin-bottom: 20px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 60%;
+            box-shadow: 1px 1px 5px #b5b7ee;
+        }
+
+        @media (max-width:500px) 
+        {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 90%;
+        }
+
+        i
+        {
+            width: 100px ;
+            height: 80px;
+            color: #FFF;
+            background-color: $secondColor ;
+            border-radius: 10px;
+            margin: 0 auto;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .card-body{
+            h5{
+                font-weight: 500;
+                color: $mainColor;
+            }
+            p{
+                font-size: 0.8rem;
+                color: $textColor;
+                
+            }
+        }
+    }
+}
+
+/* End Goal */
+
+
+/* Start Stay-up  */
+
+ .stay-up{
+    background-color: $background-about;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .stay-box
+    {
+        width: 70%;
+        @media (max-width:991px) {
+            width: 90%;
+        }
+        @media (max-width:767px) {
+            width: 100%;
+        }
+        h2{
+            font-weight: bold;
+            margin-bottom: 20px; 
+        }
+
+        p{
+            margin-top: 20px;
+            color: $textColor;
+        }
+
+        input[type="text"]
+        {
+            &:focus
+            {
+                border: none;
+                outline: 0;
+                box-shadow: 0 0 6px 0.2rem #a9a9ff;
+            }
+            
+        }
+
+        button
+        {
+            background-color: $mainColor;
+            transition: all 0.3s ease;
+            border: none;
+            &:hover
+            {
+                background-color: #6266ea;
+            }
+            
+         }
+
+    }
+
+ }
+
+
+
+/* End Stay-up  */
+
+

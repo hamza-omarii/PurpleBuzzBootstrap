@@ -1,0 +1,355 @@
+body
+{
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Start Slider */
+
+.slider-custom{
+    margin-bottom: $margBottom;
+    .carousel-item
+    {
+        height: 430px;
+        background-image: url("../images/Slider.jpg") ;
+        background-size: cover;
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        position: relative;
+
+        .carousel-caption
+        {
+            position: absolute;
+            left: 20%;
+            top: 20%;
+            text-align: left;
+            color: black;
+
+            @media (max-width:767px) 
+            { 
+                    top: 50%;
+                    transform: translateY(-50%);
+            }
+            
+            h5{
+                font-size: 3rem;
+                width: 70%;
+                margin-bottom: 20px;
+                color: $secondColor;
+                @media (max-width:1199px) 
+                {
+                width: 80%;
+                }
+                @media (max-width:991px)
+                {
+                    font-size: 2rem;
+                    width: 80%;
+                }
+                @media (max-width:767px) 
+                {
+                    font-size: 1.5rem;
+                }
+            }
+
+            p{
+                width: 60%;
+                color: $textColor;
+                margin-bottom: 20px;
+                line-height: 1.5;
+                @media (max-width:1199px) 
+                {
+                    width: 80%;
+                }
+                @media (max-width:991px) 
+                {
+                    width: 90%;
+                }
+                @media (max-width:767px) 
+                {
+                    display: none;
+                }
+
+            }
+
+            button
+            {
+                color: $secondColor;
+                border-radius: 20px;
+                width: 150px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                cursor: pointer;
+                text-align: center;
+                height: 40px;
+                border: 1px solid $secondColor;
+                transition: all 0.3s ease;
+                &:hover
+                {
+                    background-color: $secondColor;
+                    color: #FFF;
+                }
+            }
+
+        }
+
+    }
+
+
+    .fas
+    {
+        font-size: 3rem;
+        color: $secondColor;
+    }
+
+    .carousel-indicators
+    {
+        button
+        {
+            background-color: $secondColor;
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+        }
+    }
+
+}
+
+/* End Slider */
+
+
+/* Start Services */
+
+.services
+{
+    h2{
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        color: #333;
+        font-weight: bold;
+    }
+
+
+    .text
+    {
+        margin-bottom: 15px;
+            .title
+            {
+                margin-bottom: 40px;
+                
+                i{
+                    margin-right: 15px;
+                    font-size: 1.5rem;
+                    color: #6266ea;
+                }
+                
+                h3
+                {
+                    position: relative;
+                    &::after
+                    {
+                    content: "";
+                    position: absolute;
+                    width: 100px;
+                    height: 3px;
+                    background-color: #6266ea;
+                    bottom: -20px;
+                    left: 0;
+                    }
+                }
+
+            }
+        
+            p{
+            font-size: 1rem;
+            color: $textColor;
+            line-height: 1.5;
+            }
+
+    }
+
+}
+
+/* End Services */
+
+
+/* Start Background */
+.background{
+    margin-bottom: $margBottom;
+    ul{
+        background-color: #6266ea;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: $margBottom !important;
+
+        .nav-link
+        {
+            color: #FFF;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 20px;
+            &.active
+            {
+                background-color: #4338e8;
+            }
+        }
+    }
+
+    .card{
+        box-shadow: 1px 1px 5px 0px #a2a4f1;
+        margin-bottom: 20px;
+
+        @media (min-width:992px) 
+        {
+            width: 100%;
+        }
+
+        p{
+            color: #696969;
+            line-height: 1.5;
+            font-size: 0.9rem;
+
+        }
+        a
+        {
+            border: 1px solid $secondColor;
+            border-radius: 20px;
+            color: $mainColor;
+            font-weight: normal;
+            transition: all 0.3s ease;
+            &:hover
+            {
+                color: #FFF;
+                background-color:$secondColor ;
+            }
+        }
+    }
+
+}
+
+/* End Background */
+
+
+/* Start box */
+
+.box{
+    background-color: $secondColor;
+    color: #FFF;
+    padding-top: 30px ;
+    padding-bottom: 30px;
+    margin-bottom: $margBottom;
+    i{
+        font-size: 4rem;
+        margin-bottom: 15px;
+
+        @media (max-width: 767px) 
+        {
+            margin-bottom: 15px;
+        }
+    }
+
+     .text
+     {
+        text-align: center;
+        h5
+        {
+            margin-bottom: 10px;
+
+        }
+        p
+        {
+            font-size: 0.8rem;
+        }
+    }
+    button
+    {
+        @media (max-width: 767px) 
+        {
+            margin-bottom: 15px;
+        }
+        border-radius: 20px;
+        background-color: #4338e8;
+        color: #FFF;
+        transition: all 0.3s ease;
+        padding: 5px;
+        width: 160px;
+        height: 40px;
+        border: 2px solid $secondColor;
+
+        &:hover
+        {
+            background-color: #FFF;
+            color: #4338e8;
+        }
+    } 
+}
+
+/* End box */
+
+
+/* Start Works */
+
+.works{
+    margin-bottom: $margBottom;
+    h2
+    {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+    .card
+    {
+        border-radius: 10px;
+        margin-bottom: 15px;
+        margin-left:auto ;
+        margin-right:auto ;
+        width: 80%;
+        box-shadow: 1px 1px 5px 0px #a2a4f1;
+
+        .pic{
+            
+            position: relative;
+            transition: all 0.3s ease;
+            &:hover
+            {
+                &::after
+                {
+                    opacity: 1;
+                }
+
+            }
+
+            &::after
+            {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                transition: all 0.3s ease;
+                background-image: linear-gradient(to bottom, #4438e8a8 ,#6267eaa6 ,rgba(255, 255, 255, 0.664) );
+            }
+
+        }
+
+    }
+
+    .card-body
+    {
+        background-color: rgb(240, 240, 240);
+        color: #333;
+        border-radius: 0px 0px 10px 10px;
+        h5{
+            color: $mainColor;
+        }
+        p{
+            font-weight: 300;
+        }
+    }
+
+}
+
+/* End Works */

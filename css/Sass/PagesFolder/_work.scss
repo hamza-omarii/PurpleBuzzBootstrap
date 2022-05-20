@@ -1,0 +1,207 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.slider-work{
+margin-top: 66px;
+background: url("../images/sliderwork.jpg");
+color: #FFF;
+background-size: cover;
+background-position: bottom;
+height: 400px;
+position: relative;
+z-index: 2;
+margin-bottom: 30px;
+
+        .container{
+            height: 400px;
+            z-index: 2;
+
+            .box-work
+            {
+                h2{
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+                h5{
+                    margin-bottom: 20px;
+                    letter-spacing: 2px;
+                }
+                p{
+                    width: 50%;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                    @media (max-width:768px) {
+                        width: 90%;
+                    }
+                    @media (max-width:500px) {
+                        width: 100%;
+                        font-size: 0.8rem;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+
+            .buttons{
+                button{
+                    color: #FFF;
+                    font-weight: bold;
+                    border-radius: 20px;
+                    
+                    width: 130px;
+                    height: 40px;
+                    text-align: center;
+                    height: 42px;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    &:first-child{
+                        border: 2px solid #FFF;
+                       
+                    }
+                    &:last-child{
+                        background-color: $mainColor;
+                        border: 2px solid $secondColor;
+                    }
+                }
+            }
+        }
+
+        .overly{
+            position: absolute;
+            height: 400px;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+}
+
+/* Start Background-work */
+
+.background-work{
+
+    margin-bottom: $margBottom;
+    ul{
+        background-color: #FFF;
+        padding-top: 30px;
+        padding-bottom: 30px;
+       
+
+        .nav-link
+        {
+            
+            border: 1px solid #4338e8 ;
+            margin-left: 5px;
+            margin-right:5px;
+            color: #4338e8;
+            border-radius: 20px;
+
+            &.active
+            {
+                background-color: #4338e8;
+                color: #FFF;
+            }
+            &:hover{
+                background-color: #4338e8;
+                color: #FFF;
+            }
+        }
+    }
+
+    .card{
+        box-shadow: 1px 1px 5px 0px #a2a4f1;
+        margin-bottom: 20px;
+
+        @media (min-width:992px) 
+        {
+            width: 100%;
+        }
+
+        p{
+            color: #696969;
+            line-height: 1.5;
+            font-size: 0.9rem;
+
+        }
+        a
+        {
+            color: $mainColor;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            &:hover
+            {
+                i{
+                    transition: all 0.3s ease;
+                    margin-right: 10px;
+                }
+                
+            }
+
+        }
+    }
+
+}
+
+/* End background-work */
+
+
+
+/* Start featured-work */
+
+.featured-work{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $background-about;
+
+
+
+    .text-featured{
+        @media (max-width:991px) 
+        {
+            margin-bottom: 30px;
+        }
+
+        h4
+        {
+            color: $textColor;
+            margin-top: 100px;
+            margin-bottom: 30px;
+            @media (max-width:1199px) 
+            {
+                margin-top: 0px;
+            }
+        }
+
+        h2
+        {
+            color: $mainColor;
+            letter-spacing: 1px;
+            margin-bottom: 50px;
+        }
+
+        p
+        {
+            line-height: 1.7;
+            width: 95%;
+            color: $textColor;
+            @media (max-width:1199px) 
+            {
+                font-size: 0.9rem;
+            }
+            @media (max-width:500px) {
+                
+                &:nth-of-type(2){
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+}
+
+/* End featured-work */

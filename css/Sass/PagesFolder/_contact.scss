@@ -1,0 +1,102 @@
+/* Start contact img */
+
+.contact-img{
+    margin-top: 66px;
+    background-color: $background-about ;
+    margin-bottom: $margBottom;
+
+    .box-contact{
+        height: 100%;
+        @media (max-width:991px) {
+            padding-top: 20px;
+        }
+        h2{
+            color: $mainColor;
+
+        }
+        
+        h4{
+            margin-bottom: 30px;
+        }
+
+        p{
+            color: $textColor;
+        }
+    }
+}
+
+/* End contact img */
+
+
+
+
+/* Start campaign  */
+
+.campaign{
+    margin-bottom: $margBottom;
+    h2
+    {
+        color: $mainColor;
+    }
+
+    p
+    {
+        color: $textColor;
+        margin-bottom: 50px;
+    }
+
+    .box-contact
+    {
+        margin-bottom: 50px;
+        i
+        {
+            width: 20%;
+            height: 80px;
+            font-size: 2.2rem;
+            color: $secondColor;
+            margin-right: 10px;
+            border: 1px solid #e3e4f1;
+            border-radius: 10px;
+        }
+
+        .text
+        {
+
+            h4
+            {
+                font-weight: 400;
+            }
+
+            span
+            {
+                color: $textColor;
+            }
+        }
+
+    }
+
+
+    .form-control:focus
+    {
+    border-color: #acaeeb;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #ecedff;
+    }
+    
+    .text-end
+    {
+        button
+        {
+            background-color: $secondColor;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+/* End campaign  */
